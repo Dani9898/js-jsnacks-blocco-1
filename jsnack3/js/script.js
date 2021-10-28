@@ -15,19 +15,16 @@ const myArray = [];
 // fare la somma di tutti i numeri dell'array => for( let i = 0...) che aggiunge ad una variabile esterna il valore contenuto nella posizione i dell'array.
 // stampare la somma => log variabile esterna
 
+let somma = 0;
 while (myArray.length < 10) {
     let num = parseInt(prompt("Inserisci un numero: "));
     while (isNaN(num)) {
         num = parseInt(prompt("Inserisci un numero corretto: "));
    }
+   somma += num;
    myArray.push(num);
 }
 
-let somma = 0;
-
-for (let i = 0; i < myArray.length; i++) {
-    somma += myArray[i];
-}
 console.log(somma);
 
 
