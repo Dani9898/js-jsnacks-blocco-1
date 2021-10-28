@@ -17,9 +17,9 @@ const myArray = [];
 // }
 // console.log(myArray);
 
-while (myArray.length < 10) {
+while (myArray.length < 50) {
     let doppione = false;
-    let numero = Math.floor(Math.random() * 10);
+    let numero = Math.floor(Math.random() * 50);
     for (let i = 0; i < myArray.length; i++) {
         if (numero === myArray[i]) {
             doppione = true;
